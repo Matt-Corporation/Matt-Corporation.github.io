@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Typography } from "@/components/ui/typography";
 import { listPosts } from "@/lib/list-posts";
 import Link from "next/link";

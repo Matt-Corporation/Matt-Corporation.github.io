@@ -6,7 +6,7 @@ export async function listPosts() {
     const newsDir = path.join(process.cwd(), "app", "news");
     const files = (await readdir(newsDir)).filter((e) => !e.includes("."));
     return files;
-  } catch (err) {
+  } catch {
     return [];
   }
 }
