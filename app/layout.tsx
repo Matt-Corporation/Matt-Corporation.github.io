@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { CORP_NAME } from "@/lib/brand";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/header";
@@ -15,7 +16,7 @@ const inter = Inter();
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>

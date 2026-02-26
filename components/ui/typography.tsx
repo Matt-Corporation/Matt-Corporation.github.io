@@ -1,4 +1,4 @@
-import React from "react";
+import { forwardRef, type HTMLAttributes, type ReactNode } from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
@@ -58,16 +58,16 @@ const variantToTag: Record<VariantKey, string> = {
   anchor: "a",
 };
 
-interface TypographyProps extends React.HTMLAttributes<HTMLElement> {
+interface TypographyProps extends HTMLAttributes<HTMLElement> {
   variant?: VariantKey;
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
   as?: string;
   asChild?: boolean;
   disableSelect?: boolean;
 }
 
-const Typography = React.forwardRef<HTMLElement, TypographyProps>(
+const Typography = forwardRef<HTMLElement, TypographyProps>(
   (
     {
       variant = "p",
