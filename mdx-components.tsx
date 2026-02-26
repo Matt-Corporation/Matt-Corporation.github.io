@@ -1,7 +1,6 @@
+import { Typography } from "./components/ui/typography";
 import type { MDXComponents } from "mdx/types";
 import { ImageProps } from "next/image";
-import { Button } from "./components/ui/button";
-import { Typography } from "./components/ui/typography";
 import Image from "next/image";
 import Link from "next/link";
 
