@@ -78,15 +78,15 @@ const Typography = React.forwardRef<HTMLElement, TypographyProps>(
       disableSelect = false,
       ...props
     },
-    ref
+    ref,
   ) => {
-    const Comp = asChild ? Slot : as ?? variantToTag[variant];
+    const Comp = asChild ? Slot : (as ?? variantToTag[variant]);
 
     return (
       <Comp
         className={cn(
           typographyVariants({ variant, className }),
-          disableSelect ? "select-none" : ""
+          disableSelect ? "select-none" : "",
         )}
         ref={ref}
         {...props}
@@ -94,7 +94,7 @@ const Typography = React.forwardRef<HTMLElement, TypographyProps>(
         {children}
       </Comp>
     );
-  }
+  },
 );
 
 Typography.displayName = "Typography";

@@ -1,9 +1,10 @@
-import Image from "next/image";
+import { Logo } from "./logo";
 import { Button } from "./ui/button";
+import { CORP_NAME } from "@/lib/brand";
 import { Separator } from "./ui/separator";
-import favicon from "../app/favicon.svg";
-import Link from "next/link";
 import { ModeToggle } from "./mode-toggle";
+import Link from "next/link";
+import favicon from "../app/favicon.svg";
 
 export function Header() {
   return (
@@ -11,13 +12,7 @@ export function Header() {
       <div className="flex items-center justify-center">
         <Button variant="ghost" size="icon" asChild>
           <Link draggable={false} href="/" aria-label="Go home">
-            <Image
-              draggable={false}
-              src={favicon}
-              alt="Logo"
-              width={32}
-              height={32}
-            />
+            <Logo />
           </Link>
         </Button>
       </div>

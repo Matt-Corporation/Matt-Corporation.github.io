@@ -34,7 +34,7 @@ const buttonVariants = cva(
       variant: "default",
       size: "default",
     },
-  }
+  },
 );
 
 function Button({
@@ -47,10 +47,10 @@ function Button({
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean;
   }) {
-  const Comp = asChild ? Slot : "button";
+  const Component = asChild ? Slot : "button";
 
   return (
-    <Comp
+    <Component
       draggable={false}
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}

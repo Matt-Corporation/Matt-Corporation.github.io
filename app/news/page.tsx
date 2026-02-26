@@ -1,5 +1,6 @@
-import { Typography } from "@/components/ui/typography";
+import { CORP_NAME } from "@/lib/brand";
 import { listPosts } from "@/lib/list-posts";
+import { Typography } from "@/components/ui/typography";
 import Link from "next/link";
 
 export default async function News() {
@@ -9,7 +10,7 @@ export default async function News() {
     <main className=" prose prose-stone dark:prose-invert max-w-full">
       <Typography variant="h1">News</Typography>
       <Typography>
-        Get news and updates from <span translate="no">matt Corp.</span>
+        Get news and updates from <span translate="no">{CORP_NAME}</span>
       </Typography>
       <Typography variant="h2">All Posts</Typography>
       <ul>

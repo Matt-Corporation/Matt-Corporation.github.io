@@ -1,12 +1,13 @@
 import "./globals.css";
-import { Header } from "@/components/header";
-import { Inter } from "next/font/google";
 import type { Metadata } from "next";
+import { CORP_NAME } from "@/lib/brand";
+import { Inter } from "next/font/google";
+import { Header } from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "matt Corp.",
-  description: "The official matt Corp. website",
+  title: CORP_NAME,
+  description: `The official ${CORP_NAME} website`,
 };
 
 const inter = Inter();
