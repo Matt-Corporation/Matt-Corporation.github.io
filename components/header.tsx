@@ -4,7 +4,6 @@ import { CORP_NAME } from "@/lib/brand";
 import { Separator } from "./ui/separator";
 import { ModeToggle } from "./mode-toggle";
 import Link from "next/link";
-import favicon from "../app/favicon.svg";
 
 export function Header() {
   return (
