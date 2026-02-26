@@ -1,5 +1,6 @@
 import Image from "next/image";
 import favicon from "../app/favicon.svg";
+import { CORP_NAME } from "@/lib/brand";
 
 export function Logo() {
   return (
